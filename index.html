@@ -3,30 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Modal with Stacked Buttons</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Advanced Modal with Buttons</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <!-- Stacked Buttons -->
-        <button type="button" class="btn btn-primary btn-block mb-2">Migrate</button>
-        <button type="button" class="btn btn-primary btn-block mb-2">Migration</button>
-        <button type="button" class="btn btn-primary btn-block">Uniswap Router</button>
-      </div>
-    </div>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Welcome to our website</h2>
+    <p>Please choose an option:</p>
+    <button id="migrateBtn">Migrate</button>
+    <button id="migrationBtn">Migration</button>
+    <button id="uniswapBtn">Uniswap Router</button>
   </div>
 </div>
 
-<!-- Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
