@@ -15,11 +15,11 @@
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
-  margin: 10% auto;
+  margin: 10% auto; /* Center the modal vertically */
   padding: 30px;
   border-radius: 10px;
-  width: 60%;
-  max-width: 400px;
+  width: 80%; /* Increase modal content size */
+  max-width: 600px; /* Set maximum width */
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -44,6 +44,7 @@
 /* Style for buttons */
 button {
   margin-top: 20px;
+  margin-right: 10px; /* Add margin between buttons */
   padding: 10px 20px;
   font-size: 16px;
   border: none;
@@ -54,6 +55,11 @@ button {
   transition: background-color 0.3s ease;
 }
 
+button:last-child {
+  margin-right: 0; /* Remove margin for the last button */
+}
+
 button:hover {
   background-color: #45a049;
 }
+
